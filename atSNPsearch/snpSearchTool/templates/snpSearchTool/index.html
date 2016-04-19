@@ -1,0 +1,13 @@
+<h1> hi there! </h1>
+{% if snp_list %}
+  <ul>
+    {% for onesnp in snp_list %}
+      <li><a href="{% url 'snpSearchTool:results' onesnp.id %}">
+       {{ onesnp.snpid }} one change.. 
+          </a>
+     </li>
+    {%  endfor  %}
+  </ul>
+ {% else %}
+   <p> No snps to show in the index view. </p>
+ {% endif %}

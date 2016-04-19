@@ -1,0 +1,18 @@
+<h1>This area is for form controls </h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'snpSearchTool:lookup_one_snp' %}" method="post">
+{% csrf_token %}
+{{ all_scores_rows }}
+
+<input type="radio" name="choice" id="choice1" value="choice1-apples" /> 
+<label for="choice1"> choice1 label! APPLES</label> <br/>
+
+<input type="radio" name="choice" id="choice2" value="choice2-oranges" />
+<label for="choice2"> choice2 label! ORANGES!</label> <br/>
+
+
+<input type="text" value="rs99999999" name="requested_snpid" />
+<input type="submit" value="Lookup One Snp" />
+</form>
