@@ -1,5 +1,19 @@
-<h1> This is the detail view for one snp. Should be data below. </h1>
-<h1> {{ snp_scores_row }} </h1>
-<h2> {{ more_context }} </h2>
+<h1> detail view for one ScoresRow </h1>
 <h2> id of selectecd scoresrow: {{ id_of_scoresrow }} </h2>
+<table>
+	<tr> <td> snpid </td>   <td> {{ snp_scores_row.snpid }} </td> </tr>
+	<tr> <td> motif </td>   <td> {{ snp_scores_row.motif }} </td> </tr>
+	<tr> <td> motif_len</td>   <td> {{ snp_scores_row.motif_len }} </td> </tr>
+	<tr> <td>log_lik_ref</td>   <td> {{ snp_scores_row.log_lik_ref }} </td> </tr>
+	<tr> <td>log_lik_snp  </td>   <td> {{snp_scores_row.log_lik_snp }} </td> </tr>
+	<tr> <td>log_lik_ratio</td>   <td> {{snp_scores_row.log_lik_ratio}} </td> </tr>
+	<tr> <td>log_enhance_odds</td>   <td> {{snp_scores_row.log_enhance_odds}} </td> </tr>
+	<tr> <td>log_reduce_odds</td>   <td> {{snp_scores_row.log_reduce_odds}} </td> </tr>
+	<tr> <td>ref_start</td>   <td> {{snp_scores_row.ref_start}} </td> </tr>
+	<tr> <td>snp_start</td>   <td> {{snp_scores_row.snp_start}} </td> </tr>
+	<tr> <td>ref_end</td>   <td> {{snp_scores_row.ref_end}} </td> </tr>
+	<tr> <td>snp_end</td>   <td> {{snp_scores_row.snp_end}} </td> </tr>
+	<tr> <td>ref_strand</td>   <td> {{snp_scores_row.ref_strand}} </td> </tr>
+	<tr> <td>snp_strand</td>   <td> {{snp_scores_row.snp_strand}} </td> </tr>
+</table>
 <!-- display some other fields down here! -->
