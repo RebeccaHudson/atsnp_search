@@ -4,6 +4,7 @@ from django.db import models
 
 #human-readable names can be specified as first arguments to these:
 class ScoresRow(models.Model):
+  id = models.AutoField(primary_key=True)
   snpid = models.CharField(max_length=40)
   motif = models.CharField(max_length=20)
   motif_len = models.IntegerField(default=0)
@@ -21,6 +22,11 @@ class ScoresRow(models.Model):
   #There should be some way to determine from the data in this model 
   #What transcription factors are involved for this row
   #eg: what's the threshold for each column to say that it's involved.
+  class Meta:
+    db_table = 'test_pipeline_tbl'
+
+  
+
 
   def __str__(self):
     return "One row of socres data for snp: " + self.snpid
