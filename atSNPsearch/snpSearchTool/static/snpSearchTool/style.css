@@ -1,0 +1,19 @@
+li a {
+  color: GreenYellow;
+  }
+
+body {
+  /*background: gray url("images/kfish.jpg") no-repeat right bottom; */
+  background: gray;
+}
+
+#background-image { 
+   background-image: url("images/kfish.jpg");
+   opacity: 0.4;
+   position: absolute;
+   height: 800px;
+   width: 900px;
+   top: 50;
+   left: 0
+   z-index: 0
+}
