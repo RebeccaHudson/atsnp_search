@@ -2,6 +2,11 @@ li a {
   color: GreenYellow;
   }
 
+table td {
+  color: SpringGreen;  
+  font-weight: bold; 
+}
+
 body {
   /*background: gray url("images/kfish.jpg") no-repeat right bottom; */
   background: gray;
@@ -14,6 +19,18 @@ body {
    height: 800px;
    width: 900px;
    top: 50;
-   left: 0
-   z-index: 0
+   left: 0;
+   z-index: -2 
+}
+
+
+#background-image-detail {
+   background-image: url("images/kf2.jpg");
+   opacity: 0.4;
+   position: absolute;
+   height: 800px;
+   width: 900px;
+   top: 50;
+   left: 0;
+   z-index: -2;
 }
