@@ -23,7 +23,8 @@ class ScoresRow(models.Model):
   #What transcription factors are involved for this row
   #eg: what's the threshold for each column to say that it's involved.
   class Meta:
-    db_table = 'test_pipeline_tbl'
+    managed = False
+    db_table = 'snp_scores_1'
 
   
 

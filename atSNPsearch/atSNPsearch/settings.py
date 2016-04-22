@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'atSNPsearch.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -82,7 +82,18 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'actual-existing-data-motif_scores.sqlite3'),
     }
 }
+'''
 
+DATABASES = {
+   'default': {
+     'ENGINE' : 'django.db.backends.mysql',
+     'NAME'   : 'motif_score_test_db',
+     'USER'   : 'snp_test', 
+     'PASSWORD' : 'tester',
+     'HOST'     : 'fugu.biostat.wisc.edu',
+     'PORT'     : '3306',
+   }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
